@@ -23,8 +23,8 @@ function App() {
             <div id="tooplate_wrapper">
               <Navbar />
               <div id="content">
-                <div class="scroll">
-                  <div class="scrollContainer">
+                <div className="scroll">
+                  <div className="scrollContainer">
                     <Switch>
                       <Route exact path="/">
                         <AddNote/>

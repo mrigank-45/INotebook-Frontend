@@ -13,16 +13,16 @@ const Contact = () => {
             <div className="col_380 float_l">
                 <div id="contact_form">
                     <form  name="contact" >
-                        <label for="author">Name:</label>
-                        <input type="text" maxlength="40" id="author" className="input_field" name="author" />
+                        <label htmlFor="author">Name:</label>
+                        <input type="text" maxLength="40" id="author" className="input_field" name="author" />
                         <div className="cleaner_h10"></div>
-                        <label for="email">Email:</label>
-                        <input type="text" maxlength="40" id="email" className="input_field" name="email" />
+                        <label htmlFor="email">Email:</label>
+                        <input type="text" maxLength="40" id="email" className="input_field" name="email" />
                         <div className="cleaner_h10"></div>
-                        <label for="subject">Subject:</label>
-                        <input type="text" maxlength="40" id="subject" className="input_field" name="subject" />
+                        <label htmlFor="subject">Subject:</label>
+                        <input type="text" maxLength="40" id="subject" className="input_field" name="subject" />
                         <div className="cleaner_h10"></div>
-                        <label for="text">Message:</label>
+                        <label htmlFor="text">Message:</label>
                         <textarea id="text" name="text" rows="0" cols="0" className="required"></textarea>
                         <div className="cleaner_h10"></div>
                         <button  type="submit" name='submit' id='submit' className="float_l btn btn-dark" >Send</button>
