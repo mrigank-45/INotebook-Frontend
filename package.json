@@ -1,6 +1,5 @@
 {
   "name": "inotebook",
-  "homepage": "http://mrigank-45.github.io/INotebook",
   "version": "0.1.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
