@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/INotebook/static/css/main.632902f0.css",
-    "main.js": "/INotebook/static/js/main.05208a35.js",
+    "main.js": "/INotebook/static/js/main.4fe22a1c.js",
     "static/js/787.e1e25ce8.chunk.js": "/INotebook/static/js/787.e1e25ce8.chunk.js",
     "static/media/tooplate_content_bg.jpg": "/INotebook/static/media/tooplate_content_bg.460a785fc20dc602a9dd.jpg",
     "index.html": "/INotebook/index.html",
     "main.632902f0.css.map": "/INotebook/static/css/main.632902f0.css.map",
-    "main.05208a35.js.map": "/INotebook/static/js/main.05208a35.js.map",
+    "main.4fe22a1c.js.map": "/INotebook/static/js/main.4fe22a1c.js.map",
     "787.e1e25ce8.chunk.js.map": "/INotebook/static/js/787.e1e25ce8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.632902f0.css",
-    "static/js/main.05208a35.js"
+    "static/js/main.4fe22a1c.js"
   ]
 }
