@@ -7,16 +7,16 @@ const AddNote = () => {
     const context = useContext(noteContext);
     const { addNote, getNotes } = context;
     let history = useHistory();
-    useEffect(() => {
-        if (localStorage.getItem('token')) {
-            getNotes()
-        }
-        else {
-            history.push("/login");
-            window.location.reload();
-        }
-        // eslint-disable-next-line
-    }, [])
+    // useEffect(() => {
+    //     if (localStorage.getItem('token')) {
+    //         getNotes()
+    //     }
+    //     else {
+    //         history.push("/login");
+    //         window.location.reload();
+    //     }
+    //     // eslint-disable-next-line
+    // }, [])
 
     const [note, setNote] = useState({ title: "", description: "", tag: "" })
 
