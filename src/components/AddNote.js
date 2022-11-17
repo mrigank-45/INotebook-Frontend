@@ -9,7 +9,7 @@ const AddNote = () => {
     let history = useHistory();
     useEffect(() => {
         if (localStorage.getItem('token')) {
-            getNotes()
+            getNotes();
         }
         else {
             history.push("/login");
@@ -23,9 +23,10 @@ const AddNote = () => {
     const handleClick = (e) => {
         e.preventDefault();
         addNote(note.title, note.description, note.tag);
+        
         setNote({ title: "", description: "", tag: "" })
-        history.push("/notes");
-        window.location.reload();
+        // history.push("/notes");
+        // window.location.reload();
     }
 
     const onChange = (e) => {

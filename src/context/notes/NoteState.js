@@ -8,7 +8,8 @@ const NoteState = (props) => {
   // Get all Notes
   const getNotes = async () => {
     // API Call 
-    const response = await fetch(`${process.env.REACT_APP_HOST}/api/notes/fetchallnotes`, {
+    
+    const response = await fetch(`https://inotebook-backend-server.onrender.com/api/notes/fetchallnotes`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -16,14 +17,15 @@ const NoteState = (props) => {
       }
     });
     const json = await response.json()
-    setNotes(json)
+    setNotes(json);
   }
 
   // Add a Note
   const addNote = async (title, description, tag) => {
-    // TODO: API Call
+    console.log(localStorage.getItem('token'));
+  
     // API Call 
-    const response = await fetch(`${process.env.REACT_APP_HOST}/api/notes/addnote`, {
+    const response = await fetch(`https://inotebook-backend-server.onrender.com/api/notes/addnote`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +41,7 @@ const NoteState = (props) => {
   // Delete a Note
   const deleteNote = async (id) => {
     // API Call
-    const response = await fetch(`${process.env.REACT_APP_HOST}/api/notes/deletenote/${id}`, {
+    const response = await fetch(`https://inotebook-backend-server.onrender.com/api/notes/deletenote/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -54,7 +56,7 @@ const NoteState = (props) => {
   // Edit a Note
   const editNote = async (id, title, description, tag) => {
     // API Call 
-    const response = await fetch(`${process.env.REACT_APP_HOST}/api/notes/updatenote/${id}`, {
+    const response = await fetch(`https://inotebook-backend-server.onrender.com/api/notes/updatenote/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
